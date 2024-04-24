@@ -27,12 +27,10 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-
-
-    @GetMapping("/{id}/{productName}")
-    public String getProductById(@PathVariable("id") Long id, @PathVariable("productName") String productName){
-        return "Product Details=" + id + " " + productName;
-    }
+//    @GetMapping("/{id}/{productName}")
+//    public String getProductById(@PathVariable("id") Long id, @PathVariable("productName") String productName){
+//        return "Product Details=" + id + " " + productName;
+//    }
 
     @PostMapping("")
    // @ResponseBody
