@@ -9,6 +9,7 @@ import lombok.Setter;
 //@MappedSuperclass
 //@Entity( name = "ecomm_user")
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
